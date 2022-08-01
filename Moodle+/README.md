@@ -19,3 +19,12 @@ Now, build a chrome extension which will solve this question automatically!
 * Try to make the code submit the login form too! (You may have to store the credentials for this (Make sure to remove them before pushing your code to GitHub))
 * Make a separate file `style.js`, and add it to `content_scripts` in `manifest.json` such that it loads each time you open any moodle page. (You may have to use wildcards for this)
 * Using DOM selector you can change the style of the elements. So now, try to redesign moodle according to your own creativity! For instance, try making a dark-mode for moodle!
+
+
+## With the captcha and dark mode
+https://user-images.githubusercontent.com/109871116/182167059-a65fe28f-0802-4f88-8514-8370644c2dc1.mp4
+
+
+## With the captcha,credentials and submit(commented out in submission)
+https://user-images.githubusercontent.com/109871116/182167397-a509cc1a-1fb8-4397-93c7-265527d2b205.mp4
+
