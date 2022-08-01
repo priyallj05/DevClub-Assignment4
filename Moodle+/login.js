@@ -38,4 +38,4 @@ else if(arr2[1]==="enter"){
 const captcha_input_element = document.querySelector("#valuepkg3"); 
 captcha_input_element.value=answer;
 
-//login_element.submit();
+// login_element.submit();
