@@ -21,10 +21,10 @@ Now, build a chrome extension which will solve this question automatically!
 * Using DOM selector you can change the style of the elements. So now, try to redesign moodle according to your own creativity! For instance, try making a dark-mode for moodle!
 
 
-## With the captcha and dark mode
+##  With the captcha and dark mode
 https://user-images.githubusercontent.com/109871116/182167059-a65fe28f-0802-4f88-8514-8370644c2dc1.mp4
 
 
-## With the captcha,credentials and submit(commented out in submission)
+##  With the captcha,credentials and submit(commented out in submission)
 https://user-images.githubusercontent.com/109871116/182167397-a509cc1a-1fb8-4397-93c7-265527d2b205.mp4
 
