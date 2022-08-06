@@ -1,0 +1,467 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    
+    
+}
+
+
+#navlist{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vw 2vw;
+    margin: auto;
+}
+#navlist li{
+    padding: 2vw 4vw;
+}
+#navlist li a{
+    
+    padding: 1vw 1vw;    
+    text-decoration: none;
+    color: #e8afce;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 2vw;
+    transition: 0.5s ease-in-out;
+}
+
+#navlist li a:hover{
+    font-size: 4vw;
+    font-weight: 900;
+}
+@media (min-width:700px){
+    #navlist li a{
+        font-size: 2vw;
+        padding: 0.5vw 0.5vw;
+    }
+    #navlist li{
+        padding: 1vw 3vw;
+    }
+    #navlist{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1vw 1vw;
+        margin: auto;
+    }
+    #navlist li a:hover{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+
+}
+
+
+#Home{
+    margin: auto;
+    padding: 2em 1em 2em;
+    background-image: url('virus.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:700px){
+    #Home{
+    height: 80vh;
+
+}
+}
+#Home h1,#Home h2{
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#Tips{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Tips div{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    align-items: center;
+    margin: 1em 1em;
+    border-radius: 15vw;
+    background-color: #750550;
+    
+}
+
+
+#Tips img{
+    height: 40vh;
+    width: 30vw;
+}
+@media (max-width:700px){
+    #Tips div{
+        width: 60vw;
+    }
+    #Tips img{
+        height: 30vh;
+        width: 20vw;
+    }
+
+}
+#Tips h1{
+    color: #750550;
+    color: white;
+    font-size: 6vw;
+    letter-spacing: 0.5vw;
+    font-weight: bold;
+    padding-top: 1vh;
+}
+#Tips h2{
+    color: #e8afce;
+    font-size: 6vw;
+    padding: 10vw;
+}
+#Symptoms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #750550;
+}
+#Symptoms h1{
+    color: white;
+    font-weight: bold;
+    font-size: 5vw;
+    padding-top: 4vh;
+}
+#table{
+    background-color: #e8afce;
+    table-layout: fixed;
+    width: 60vw;
+    height: 40vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-collapse: collapse;
+}
+
+#table th,td{
+    padding: 1vw;
+    width: 15vw;
+    text-align: center;
+    color: black;
+    border: black solid 0.4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    padding: auto;
+    padding-top: 3vw;
+    
+}
+#table th:last-of-type{
+    width: 30vw;
+}
+
+#table th{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    padding-top: 1vw;
+
+}
+#table thead{
+    background-color: #e8afce;
+    background-color: #DD87B6;
+}
+#faq{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    
+}
+.faqs {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4vw;
+    
+}
+.flipcard{
+    background-color: transparent;
+  width: 20vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flipcardinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  .flipcard:hover .flipcardinner {
+    transform: rotateX(180deg);
+  }
+  .flipcardfront, .flipcardback {
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    border-radius: 3vh;
+    border: 7px solid #750550;
+  }
+
+  .flipcardfront {
+    background-color: #750550;
+    color: #e8afce;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .flipcardback {
+    background-color: #750550;
+    color: #e8afce;
+    transform: rotateX(180deg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width:800px){
+    #faq{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        background-color: black;
+        height: 100vh;
+        
+    }
+    .flipcard{
+      
+      width: 80vw;
+      height: 15vh;
+      
+    }
+    .faqs {
+        
+        font-size: 4vw;
+        
+    }
+    .flipcardfront {
+        background-color: #750550;
+        color: #e8afce;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+      .flipcardback {
+        background-color: #750550;
+        color: #e8afce;
+        transform: rotateX(180deg);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+#YouTube{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #750550;
+}
+#YouTube h1{
+    color: #e8afce;
+    font-size: 7vw;
+    font-weight: bold;
+    padding: 7vh;
+}
+#YouTube iframe{
+    width:70vw;
+    height:50vh;
+}
+#Hospitals{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DD87B6;
+}
+#Hospitals h1{
+    color: #750550;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 7vh;
+}
+#map{
+    width:70vw;
+    height:50vh;
+}
+.myChart
+{
+    margin: auto;
+    background-color: white;
+}
+.graphs{
+    background-color: #750550;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.thoda
+{
+    display:flex;
+    flex-direction: row;
+}
+.graphs h1
+{
+    font-weight: bold;
+    font-size: 10vh;
+    padding: 10vh;
+    margin: auto;
+    color: black;
+}
+.smallcard
+{
+    align-items: center;
+    text-align: center;
+    font-size: 4vh;
+    padding: 10vh;
+    margin: auto;
+}
+.smallcard h2
+{
+    color: black;
+    font-size: 6vh;
+    font-weight: 600;
+}
+.smallcard h3
+{
+    color: #e8afce;
+}
+footer{
+    background-color: black;
+    color: #e8afce;
+    font-weight: 600;
+    height: 30vh;
+    font-size: 6vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+#footer h1{
+    padding: 2vh;
+    margin: 2vh;
+} 
+footer h2 a{
+    font-size: 4vh;
+    text-decoration: none;
+    color: #e8afce;
+    padding: 1vw;
+    margin: 1vw;
+    transition: 0.8s ease-in-out;
+    background-color: #750550;
+    border-radius: 1.5vw;
+
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2 a:hover{
+    font-size: 5vh
+}
+@media (max-width:700px){
+    footer{
+        font-size: 3vw;
+        height: 15vh;
+    }
+    #footer h1{
+        padding: 0.5vh;
+        margin: 0.5vh;
+    } 
+    footer h2 a{
+        font-size: 2vw;
+    }
+    footer h2 a:hover{
+        font-size: 4vw;
+    }
+    
+
+}
